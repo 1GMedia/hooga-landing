@@ -106,7 +106,7 @@ function HeroSection() {
             href="#dealer-form"
             className="px-10 py-5 bg-white text-black font-bold text-lg tracking-wide hover:bg-gray-200 transition-colors"
           >
-            Become a Dealer
+            Claim Your Territory
           </a>
           <a
             href="#products"
@@ -135,7 +135,7 @@ function ProductsSection() {
   const products = [
     {
       name: "HOOGA 8850",
-      tagline: "Flagship Performance",
+      tagline: "25kW of Pure Dual-Sport Power",
       specs: [
         { label: "Top Speed", value: "115 km/h" },
         { label: "Range", value: "140 km" },
@@ -149,7 +149,7 @@ function ProductsSection() {
     },
     {
       name: "HOOGA 7270",
-      tagline: "Long Range Champion",
+      tagline: "180km Range — Ride All Day, Charge Overnight",
       specs: [
         { label: "Top Speed", value: "100 km/h" },
         { label: "Range", value: "180 km" },
@@ -167,12 +167,12 @@ function ProductsSection() {
     <AnimatedSection id="products" className="py-32 px-6 bg-white text-black">
       <div className="max-w-6xl mx-auto">
         <motion.div variants={fadeInUp} className="text-center mb-24">
-          <p className="text-xs font-medium tracking-[0.3em] text-gray-500 uppercase mb-4">Introducing</p>
+          <p className="text-xs font-medium tracking-[0.3em] text-gray-500 uppercase mb-4">The Bikes</p>
           <h2 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
-            Our <span className="text-[#E31937]">Lineup</span>
+            Two Models, <span className="text-[#E31937]">Every Rider</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-xl mx-auto font-light">
-            Two exceptional models engineered for different riding styles. Both delivering uncompromising performance.
+            The 8850 for riders who want raw power and top speed. The 7270 for all-day range and trail versatility.
           </p>
         </motion.div>
 
@@ -249,19 +249,19 @@ function VariantsSection() {
     {
       name: "Street",
       wheel: "19/18",
-      description: "Urban-ready with street tires for city dominance",
+      description: "Commuter-ready with DOT-approved tires for daily riders",
       features: ["Street tires", "Urban suspension", "DOT brakes"],
     },
     {
       name: "Trail",
       wheel: "21/18",
-      description: "Knobby tires and extended travel for off-road adventures",
+      description: "240mm KKE suspension and knobby tires for trails and fire roads",
       features: ["Knobby tires", "KKE 240mm suspension", "Reinforced frame"],
     },
     {
       name: "Supermoto",
       wheel: "17/17",
-      description: "Track-focused setup for maximum cornering aggression",
+      description: "Sticky 17-inch wheels and sport suspension for flat track and parking lot rippers",
       features: ["Slick tires", "Sport suspension", "Quick-release wheels"],
     },
   ];
@@ -275,7 +275,7 @@ function VariantsSection() {
             Choose Your <span className="text-[#E31937]">Variant</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-xl mx-auto font-light">
-            Three distinct variants. Two body styles. Infinite possibilities.
+            Three wheel packages. Two body styles. Every model built to order for your market.
           </p>
         </motion.div>
 
@@ -308,11 +308,11 @@ function VariantsSection() {
           <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
             <div className="p-8 bg-white">
               <h4 className="text-xl font-bold mb-2">Semi-Shroud</h4>
-              <p className="text-gray-500 font-light">Minimal coverage, maximum performance</p>
+              <p className="text-gray-500 font-light">Open frame, lighter weight, easier maintenance access</p>
             </div>
             <div className="p-8 bg-white">
               <h4 className="text-xl font-bold mb-2">Full-Fairing</h4>
-              <p className="text-gray-500 font-light">Complete wind protection, aerodynamic</p>
+              <p className="text-gray-500 font-light">Full wind protection for longer rides and highway speeds</p>
             </div>
           </div>
         </motion.div>
@@ -324,14 +324,14 @@ function VariantsSection() {
 // Features Section
 function FeaturesSection() {
   const features = [
-    { title: "3-in-1 Light Module", description: "Advanced headlight, DRL, and amber lighting all in one unit" },
-    { title: "Dual Battery System", description: "Quick-remove straps for easy swapping and extended range" },
-    { title: "Battery Lock & Indicator", description: "Secure locking system with integrated charge status" },
-    { title: "Aluminum Bash Plate", description: "High-strength protection for rough terrain" },
-    { title: "External Charging Port", description: "Charge anywhere without removing the battery" },
-    { title: "Chain Drive Motor", description: "Electric mid-mount motor with reliable chain drive" },
-    { title: "KKE Suspension", description: "240mm front and rear travel for any terrain" },
-    { title: "Rear Foot Brake", description: "Optional rear foot-brake for custom riding style" },
+    { title: "3-in-1 Light Module", description: "Headlight, DRL, and amber turn signals in one sealed unit — fewer parts, fewer warranty claims" },
+    { title: "Dual Battery System", description: "Swap batteries in under 60 seconds. Customers can double their range between charges" },
+    { title: "Battery Lock & Indicator", description: "Tamper-proof locking with at-a-glance charge status — no guessing, no theft risk" },
+    { title: "Aluminum Bash Plate", description: "CNC aluminum skid plate protects the motor and frame on trail variants" },
+    { title: "External Charging Port", description: "Plug into any standard outlet — no battery removal needed, no special equipment" },
+    { title: "Chain Drive Motor", description: "Mid-mount electric motor with standard chain drive — any shop can service it" },
+    { title: "KKE Suspension", description: "240mm travel front and rear. Fully adjustable for rider weight and terrain" },
+    { title: "Rear Foot Brake", description: "Optional foot brake lets riders choose their preferred braking setup" },
   ];
 
   return (
@@ -340,10 +340,10 @@ function FeaturesSection() {
         <motion.div variants={fadeInUp} className="text-center mb-20">
           <p className="text-xs font-medium tracking-[0.3em] text-gray-500 uppercase mb-4">Engineering</p>
           <h2 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
-            Key <span className="text-[#E31937]">Features</span>
+            Built to <span className="text-[#E31937]">Sell</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-xl mx-auto font-light">
-            Engineering excellence in every component. Built to perform, designed to last.
+            Every detail designed to reduce service calls, impress on the showroom floor, and keep riders coming back.
           </p>
         </motion.div>
 
@@ -370,10 +370,10 @@ function FeaturesSection() {
 // Why Partner Section
 function WhyPartnerSection() {
   const benefits = [
-    { title: "Exploding EV Market", description: "The electric powersports market is growing 40%+ annually", stat: "40%", label: "YoY Growth" },
-    { title: "Premium Positioning", description: "Quality and innovation that commands respect", stat: "Premium", label: "Brand Tier" },
-    { title: "Dealer Support", description: "Marketing materials, training, dedicated B2B", stat: "Full", label: "Support" },
-    { title: "Margin Opportunity", description: "Competitive pricing with strong margins", stat: "High", label: "Margins" },
+    { title: "Market Timing", description: "Electric powersports is growing 40%+ year-over-year. Early dealers own their region", stat: "40%", label: "YoY Growth" },
+    { title: "No Gas, No Oil Changes", description: "Your service dept stays busy with upgrades and accessories, not oil changes customers skip", stat: "Zero", label: "Fluids" },
+    { title: "Turnkey Dealer Program", description: "We provide POP displays, digital assets, product training, and a dedicated B2B portal", stat: "Done", label: "For You" },
+    { title: "Six Configurations", description: "Three variants and two body styles per model — stock fewer SKUs, serve more customers", stat: "6", label: "Per Model" },
   ];
 
   return (
@@ -385,7 +385,7 @@ function WhyPartnerSection() {
             Why Partner <span className="text-[#E31937]">With HOOGA</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-xl mx-auto font-light">
-            Join the electric revolution. Partner with a brand defining the future of powersports.
+            Add electric to your floor without the risk. We handle the learning curve so you can focus on selling.
           </p>
         </motion.div>
 
@@ -408,15 +408,15 @@ function WhyPartnerSection() {
           variants={fadeInUp}
           className="mt-20 text-center p-16 bg-white"
         >
-          <h3 className="text-3xl font-bold mb-4">Ready to Join?</h3>
+          <h3 className="text-3xl font-bold mb-4">2026 Territories Are Filling Up</h3>
           <p className="text-gray-500 font-light mb-8 max-w-md mx-auto">
-            Limited dealer spots available for 2026. Secure your territory today.
+            We are onboarding a limited number of dealers per region. Once your area is claimed, it is closed.
           </p>
           <a
             href="#dealer-form"
             className="inline-block px-10 py-5 bg-[#E31937] text-white font-bold text-lg tracking-wide hover:bg-[#c41530] transition-colors"
           >
-            Apply Now
+            Reserve Your Territory
           </a>
         </motion.div>
       </div>
@@ -451,12 +451,12 @@ function DealerForm() {
     <AnimatedSection id="dealer-form" className="py-32 px-6 bg-white">
       <div className="max-w-2xl mx-auto">
         <motion.div variants={fadeInUp} className="text-center mb-16">
-          <p className="text-xs font-medium tracking-[0.3em] text-gray-500 uppercase mb-4">Application</p>
+          <p className="text-xs font-medium tracking-[0.3em] text-gray-500 uppercase mb-4">Limited Availability</p>
           <h2 className="text-5xl md:text-6xl font-bold mb-4 tracking-tight">
-            Dealer <span className="text-[#E31937]">Waitlist</span>
+            Lock In Your <span className="text-[#E31937]">Region</span>
           </h2>
           <p className="text-lg text-gray-600 font-light">
-            Join the waitlist to become an authorized HOOGA dealer. We'll be in touch with next steps.
+            Submit your details to reserve dealer rights in your area. Our team responds within 2-3 business days.
           </p>
         </motion.div>
 
@@ -572,7 +572,7 @@ function DealerForm() {
               type="submit"
               className="w-full py-5 bg-[#E31937] text-white font-bold text-lg tracking-wide hover:bg-[#c41530] transition-colors"
             >
-              Submit Application
+              Secure My Dealer Spot
             </button>
 
             <p className="text-center text-gray-400 text-sm font-light">
