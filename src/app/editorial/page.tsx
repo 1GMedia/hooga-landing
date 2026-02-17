@@ -249,20 +249,23 @@ function VariantsSection() {
     {
       name: "Street",
       wheel: "19/18",
+      image: "/images/page-22.png",
       description: "Commuter-ready with DOT-approved tires for daily riders",
-      features: ["Street tires", "Urban suspension", "DOT brakes"],
+      features: ["19\"/18\" dual-purpose tires", "Gold USD inverted forks", "DOT hydraulic brakes"],
     },
     {
       name: "Trail",
       wheel: "21/18",
+      image: "/images/page-23.png",
       description: "240mm KKE suspension and knobby tires for trails and fire roads",
-      features: ["Knobby tires", "KKE 240mm suspension", "Reinforced frame"],
+      features: ["21\"/18\" knobby tires", "KKE 240mm suspension", "Aluminum bash plate"],
     },
     {
       name: "Supermoto",
       wheel: "17/17",
+      image: "/images/page-24.png",
       description: "Sticky 17-inch wheels and sport suspension for flat track and parking lot rippers",
-      features: ["Slick tires", "Sport suspension", "Quick-release wheels"],
+      features: ["17\"/17\" dual-purpose tires", "Sport suspension", "Quick-release wheels"],
     },
   ];
 
@@ -286,8 +289,12 @@ function VariantsSection() {
               variants={fadeInUp}
               className="p-10 bg-white"
             >
-              <div className="w-full h-40 mb-8 bg-gray-100 flex items-center justify-center">
-                <span className="text-3xl font-light text-gray-400">{variant.wheel}</span>
+              <div className="w-full h-48 mb-8 bg-gray-900 relative overflow-hidden">
+                <img
+                  src={variant.image}
+                  alt={`${variant.name} variant`}
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="text-3xl font-bold mb-3">{variant.name}</h3>
               <p className="text-gray-500 font-light mb-6 leading-relaxed">{variant.description}</p>
@@ -324,14 +331,14 @@ function VariantsSection() {
 // Features Section
 function FeaturesSection() {
   const features = [
-    { title: "3-in-1 Light Module", description: "Headlight, DRL, and amber turn signals in one sealed unit — fewer parts, fewer warranty claims" },
-    { title: "Dual Battery System", description: "Swap batteries in under 60 seconds. Customers can double their range between charges" },
-    { title: "Battery Lock & Indicator", description: "Tamper-proof locking with at-a-glance charge status — no guessing, no theft risk" },
-    { title: "Aluminum Bash Plate", description: "CNC aluminum skid plate protects the motor and frame on trail variants" },
-    { title: "External Charging Port", description: "Plug into any standard outlet — no battery removal needed, no special equipment" },
-    { title: "Chain Drive Motor", description: "Mid-mount electric motor with standard chain drive — any shop can service it" },
-    { title: "KKE Suspension", description: "240mm travel front and rear. Fully adjustable for rider weight and terrain" },
-    { title: "Rear Foot Brake", description: "Optional foot brake lets riders choose their preferred braking setup" },
+    { title: "3-in-1 Light Module", description: "Headlight, DRL, and amber turn signals in one sealed unit — fewer parts, fewer warranty claims", image: "/images/page-10.png" },
+    { title: "Dual Battery System", description: "Swap batteries in under 60 seconds. Customers can double their range between charges", image: "/images/page-11.png" },
+    { title: "Battery Lock & Indicator", description: "Tamper-proof locking with at-a-glance charge status — no guessing, no theft risk", image: "/images/page-12.png" },
+    { title: "Aluminum Bash Plate", description: "CNC aluminum skid plate protects the motor and frame on trail variants", image: "/images/page-08.png" },
+    { title: "External Charging Port", description: "Plug into any standard outlet — no battery removal needed, no special equipment", image: "/images/page-09.png" },
+    { title: "Chain Drive Motor", description: "Mid-mount electric motor with standard chain drive — any shop can service it", image: "/images/page-18.png" },
+    { title: "KKE Suspension", description: "240mm travel front and rear. Fully adjustable for rider weight and terrain", image: "/images/page-17.png" },
+    { title: "Rear Foot Brake", description: "Optional foot brake lets riders choose their preferred braking setup", image: "/images/page-08.png" },
   ];
 
   return (
@@ -354,8 +361,12 @@ function FeaturesSection() {
               variants={fadeInUp}
               className="p-8 bg-[#f8f8f8]"
             >
-              <div className="w-12 h-12 border-2 border-[#E31937] mb-6 flex items-center justify-center">
-                <span className="text-[#E31937] font-bold">{index + 1}</span>
+              <div className="w-full h-32 mb-4 bg-gray-900 relative overflow-hidden rounded">
+                <img
+                  src={feature.image}
+                  alt={feature.title}
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="text-lg font-bold mb-2">{feature.title}</h3>
               <p className="text-gray-500 font-light text-sm leading-relaxed">{feature.description}</p>
@@ -640,7 +651,7 @@ function Footer() {
 
 export default function EditorialPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-white text-black">
       <HeroSection />
       <ProductsSection />
       <VariantsSection />
