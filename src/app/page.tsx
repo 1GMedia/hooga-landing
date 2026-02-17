@@ -53,16 +53,8 @@ export default function Home() {
             <Link href="/cyberpunk" className="group relative bg-[#0a0a0a] border-2 border-gray-800 hover:border-[#E31937] transition-all duration-300 overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-[#E31937]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="aspect-[4/5] relative overflow-hidden">
-                {/* Preview thumbnail simulation */}
-                <div className="absolute inset-0 bg-black">
-                  <div className="absolute inset-0 bg-[linear-gradient(rgba(227,25,55,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(227,25,55,0.1)_1px,transparent_1px)] bg-[size:20px_20px] opacity-50" />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-32 h-32 border-2 border-[#E31937] rounded-full flex items-center justify-center">
-                      <div className="w-24 h-24 border border-[#E31937] rounded-full animate-pulse" />
-                    </div>
-                  </div>
-                  <div className="absolute bottom-4 left-4 right-4 h-1 bg-[#E31937] opacity-50" />
-                </div>
+                <img src="/images/hooga-hero.png" alt="HOOGA Cyberpunk" className="absolute inset-0 w-full h-full object-cover" style={{ filter: 'brightness(0.4) saturate(1.5)' }} />
+                <div className="absolute inset-0 bg-[linear-gradient(rgba(227,25,55,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(227,25,55,0.1)_1px,transparent_1px)] bg-[size:20px_20px] opacity-50" />
               </div>
               <div className="p-6 relative z-10">
                 <div className="flex items-center gap-2 mb-2">
@@ -86,15 +78,7 @@ export default function Home() {
             <Link href="/editorial" className="group relative bg-white border-2 border-gray-200 hover:border-black transition-all duration-300 overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-gray-50 to-white opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="aspect-[4/5] relative overflow-hidden bg-white">
-                <div className="absolute inset-0 bg-white">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-48 h-64 border border-gray-300 flex flex-col items-center justify-center p-8">
-                      <div className="w-full h-2 bg-black mb-4" />
-                      <div className="w-3/4 h-2 bg-gray-300 mb-2" />
-                      <div className="w-1/2 h-2 bg-gray-300" />
-                    </div>
-                  </div>
-                </div>
+                <img src="/images/hooga-hero.png" alt="HOOGA Editorial" className="absolute inset-0 w-full h-full object-cover" style={{ filter: 'brightness(0.9) grayscale(100%)' }} />
               </div>
               <div className="p-6 relative z-10 bg-white">
                 <h2 className="text-3xl font-black text-black mb-2 group-hover:tracking-wider transition-all">
@@ -113,12 +97,8 @@ export default function Home() {
             <Link href="/brutalist" className="group relative bg-[#E31937] border-2 border-black transition-all duration-300 overflow-hidden">
               <div className="absolute inset-0 bg-black transform translate-x-full group-hover:translate-x-0 transition-transform duration-300" />
               <div className="aspect-[4/5] relative overflow-hidden bg-[#E31937]">
-                <div className="absolute inset-0">
-                  <div className="absolute top-4 left-4 right-4 bottom-4 border-4 border-black" />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-32 h-32 bg-black" />
-                  </div>
-                </div>
+                <img src="/images/hooga-hero.png" alt="HOOGA Brutalist" className="absolute inset-0 w-full h-full object-cover" style={{ filter: 'brightness(0.6) contrast(1.3)' }} />
+                <div className="absolute inset-0 bg-[#E31937]/30" />
               </div>
               <div className="p-6 relative z-10">
                 <h2 className="text-3xl font-black text-white mb-2 group-hover:text-[#E31937] transition-colors">

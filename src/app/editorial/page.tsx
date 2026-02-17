@@ -51,11 +51,12 @@ function HeroSection() {
         className="absolute inset-0 w-full h-full object-cover"
         style={{ filter: 'grayscale(100%) brightness(0.7)' }}
       >
-        <source src="/videos/hooga-video1.mp4" type="video/mp4" />
+        <source src="/images/hooga-video1.mp4" type="video/mp4" />
       </video>
       
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-white/10" />
+      {/* Dark fallback background + overlay */}
+      <div className="absolute inset-0 bg-black" style={{ zIndex: -1 }} />
+      <div className="absolute inset-0 bg-black/50" />
       
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
@@ -186,9 +187,13 @@ function ProductsSection() {
                 <p className="text-xs font-bold tracking-widest text-[#E31937] uppercase mb-4">Flagship Model</p>
               )}
               
-              {/* Product image placeholder */}
-              <div className="w-full aspect-[4/3] mb-8 bg-gray-100 flex items-center justify-center">
-                <span className="text-gray-400 font-light text-lg">{product.name} Image</span>
+              {/* Product image */}
+              <div className="w-full aspect-[4/3] mb-8 bg-gray-100 relative overflow-hidden">
+                <img
+                  src={product.featured ? "/images/page-06.png" : "/images/page-15.png"}
+                  alt={product.name}
+                  className="w-full h-full object-cover"
+                />
               </div>
 
               <h3 className="text-5xl font-bold mb-2">{product.name}</h3>

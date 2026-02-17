@@ -48,7 +48,7 @@ function HeroSection() {
         className="absolute inset-0 w-full h-full object-cover"
         style={{ filter: 'contrast(1.2) brightness(0.8) sepia(20%) saturate(0.8)' }}
       >
-        <source src="/videos/hooga-video1.mp4" type="video/mp4" />
+        <source src="/images/hooga-video1.mp4" type="video/mp4" />
       </video>
       
       {/* Heavy overlay */}
@@ -196,8 +196,12 @@ function ProductsSection() {
               )}
               
               {/* Product image */}
-              <div className="w-full h-64 mb-8 bg-black/10 flex items-center justify-center border-4 border-current">
-                <span className="font-black text-4xl opacity-50">{product.name}</span>
+              <div className="w-full h-64 mb-8 relative overflow-hidden border-4 border-current">
+                <img
+                  src={product.featured ? "/images/page-06.png" : "/images/page-15.png"}
+                  alt={product.fullName}
+                  className="w-full h-full object-cover"
+                />
               </div>
 
               <h3 className="text-6xl md:text-8xl font-black mb-2 tracking-tighter">{product.name}</h3>

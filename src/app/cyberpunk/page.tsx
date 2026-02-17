@@ -98,7 +98,7 @@ function HeroSection() {
         className="absolute inset-0 w-full h-full object-cover"
         style={{ filter: 'brightness(0.3) saturate(1.5)' }}
       >
-        <source src="/videos/hooga-video1.mp4" type="video/mp4" />
+        <source src="/images/hooga-video1.mp4" type="video/mp4" />
       </video>
       
       {/* Scanlines overlay */}
@@ -284,16 +284,16 @@ function ProductsSection() {
                 </div>
               )}
               
-              {/* Product image placeholder */}
-              <div className="w-full h-48 mb-6 rounded flex items-center justify-center relative overflow-hidden" style={{
-                background: 'linear-gradient(135deg, #E3193711 0%, #0a0a0a 100%)',
+              {/* Product image */}
+              <div className="w-full h-48 mb-6 rounded relative overflow-hidden" style={{
                 border: `1px solid ${product.featured ? '#E31937' : '#333'}`
               }}>
-                {/* Scan effect */}
+                <img
+                  src={product.featured ? "/images/page-06.png" : "/images/page-15.png"}
+                  alt={product.name}
+                  className="w-full h-full object-cover"
+                />
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#E31937]/10 to-transparent animate-pulse" />
-                <span className="font-mono text-[#E31937] text-lg opacity-50">
-                  [{product.name}_IMAGE]
-                </span>
               </div>
 
               <h3 className="font-mono text-3xl font-bold text-white mb-1">{product.name}</h3>
