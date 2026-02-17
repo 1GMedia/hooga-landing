@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@theme {
+  --color-hooga-red: #E31937;
+  --color-hooga-red-light: #FF2D4F;
+  --color-hooga-red-dark: #B81229;
+  --color-hooga-navy: #0A1628;
+  --color-hooga-navy-light: #152238;
+  --font-orbitron: "Orbitron", sans-serif;
+  --font-rajdhani: "Rajdhani", sans-serif;
+  --font-exo: "Exo 2", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E31937;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF2D4F;
+}
+
+/* Neon glow effects */
+.neon-glow {
+  text-shadow: 0 0 10px #E31937, 0 0 20px #E31937, 0 0 40px #E31937;
+}
+
+.neon-box {
+  box-shadow: 0 0 20px rgba(227, 25, 55, 0.3), inset 0 0 20px rgba(227, 25, 55, 0.1);
+}
+
+.neon-border {
+  border: 1px solid #E31937;
+  box-shadow: 0 0 10px rgba(227, 25, 55, 0.5), inset 0 0 10px rgba(227, 25, 55, 0.2);
+}
+
+/* Gradient overlays */
+.hero-gradient {
+  background: linear-gradient(180deg, rgba(10, 10, 10, 0.3) 0%, rgba(10, 10, 10, 0.9) 100%);
+}
+
+.red-gradient {
+  background: linear-gradient(135deg, #E31937 0%, #B81229 100%);
+}
+
+/* Animated background */
+.animated-bg {
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(227, 25, 55, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(227, 25, 55, 0.1) 0%, transparent 50%),
+    linear-gradient(180deg, #0a0a0a 0%, #152238 100%);
+}
+
+/* Card hover effects */
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(227, 25, 55, 0.3);
+}
+
+/* Input styles */
+input, textarea, select {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #E31937;
+  box-shadow: 0 0 10px rgba(227, 25, 55, 0.3);
+  outline: none;
+}
