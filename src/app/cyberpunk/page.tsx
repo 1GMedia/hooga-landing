@@ -166,7 +166,7 @@ function HeroSection() {
             className="px-8 py-4 bg-[#E31937] font-mono font-bold text-black text-lg hover:bg-[#ff3366] transition-colors"
             style={{ boxShadow: '0 0 20px rgba(227, 25, 55, 0.5)' }}
           >
-            [ DEPLOY DEALER REQUEST ]
+            [ CLAIM_TERRITORY ]
           </a>
           <a
             href="#products"
@@ -224,7 +224,7 @@ function ProductsSection() {
   const products = [
     {
       name: "HOOGA 8850",
-      tagline: ">> FLAGSHP_PERFORMANCE",
+      tagline: ">> 25KW_DUAL_SPORT_POWER",
       specs: [
         { label: "TOP_SPEED", value: "115 km/h" },
         { label: "RANGE", value: "140 km" },
@@ -238,7 +238,7 @@ function ProductsSection() {
     },
     {
       name: "HOOGA 7270",
-      tagline: ">> LONG_RANGE_CHAMP",
+      tagline: ">> 180KM_RANGE_ALL_DAY",
       specs: [
         { label: "TOP_SPEED", value: "100 km/h" },
         { label: "RANGE", value: "180 km" },
@@ -264,7 +264,7 @@ function ProductsSection() {
             <span className="text-[#E31937]">LINEUP</span>
           </h2>
           <p className="font-mono text-gray-400 text-lg max-w-2xl mx-auto">
-            &gt; Two models. One mission. Zero compromises.
+            &gt; The 8850 for raw power. The 7270 for all-day range.
           </p>
         </motion.div>
 
@@ -349,20 +349,20 @@ function VariantsSection() {
     {
       name: "STREET",
       wheel: "19/18",
-      description: "&gt; Urban-ready with street tires",
-      features: ["STREET_TIRES", "URBAN_SUSPENSION", "DOT_BRAKES"],
+      description: "&gt; 19/18 DOT tires for daily riders",
+      features: ["DUAL_PURPOSE_TIRES", "USD_GOLD_FORKS", "DOT_HYDRAULIC_BRAKES"],
     },
     {
       name: "TRAIL",
       wheel: "21/18",
-      description: "&gt; Knobby tires for off-road",
-      features: ["KNOBBY_TIRES", "KKE_240MM", "REINF_FRAME"],
+      description: "&gt; 21/18 knobby tires + 240mm KKE travel",
+      features: ["KNOBBY_OFF_ROAD", "KKE_240MM_TRAVEL", "ALUMINUM_BASH_PLATE"],
     },
     {
       name: "SUPERMOTO",
       wheel: "17/17",
-      description: "&gt; Track-focused aggression",
-      features: ["SLICK_TIRES", "SPORT_SUSPENSION", "QUICK_REL"],
+      description: "&gt; 17/17 sticky wheels for flat track",
+      features: ["DUAL_PURPOSE_TIRES", "SPORT_SUSPENSION", "QUICK_RELEASE_WHEELS"],
     },
   ];
 
@@ -410,11 +410,11 @@ function VariantsSection() {
           <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
             <div className="p-6 bg-[#0a0a0a] border border-[#E31937]/30">
               <h4 className="font-mono text-xl font-bold text-[#E31937] mb-2">SEMI-SHROUD</h4>
-              <p className="font-mono text-gray-400 text-sm">&gt; Minimal coverage, max performance</p>
+              <p className="font-mono text-gray-400 text-sm">&gt; Open frame, lighter weight, easier service</p>
             </div>
             <div className="p-6 bg-[#0a0a0a] border border-[#E31937]/30">
               <h4 className="font-mono text-xl font-bold text-[#E31937] mb-2">FULL-FAIRING</h4>
-              <p className="font-mono text-gray-400 text-sm">&gt; Complete wind protection</p>
+              <p className="font-mono text-gray-400 text-sm">&gt; Full wind protection for highway speeds</p>
             </div>
           </div>
         </motion.div>
@@ -426,14 +426,14 @@ function VariantsSection() {
 // Features Section
 function FeaturesSection() {
   const features = [
-    { title: "3-IN-1 LIGHT", desc: "Advanced headlight, DRL, amber lighting", icon: "[💡]" },
-    { title: "DUAL BATTERY", desc: "Quick-remove straps for easy swapping", icon: "[🔋]" },
-    { title: "BATTERY LOCK", desc: "Secure locking with charge indicator", icon: "[🔒]" },
-    { title: "ALUMINUM PLATE", desc: "High-strength bash plate protection", icon: "[🛡️]" },
-    { title: "EXT_CHG_PORT", desc: "Charge without removing battery", icon: "[⚡]" },
-    { title: "CHAIN DRIVE", desc: "Electric mid-mount, chain drive", icon: "[⚙️]" },
-    { title: "KKE SUSPENSION", desc: "240mm front/rear travel", icon: "[🔧]" },
-    { title: "REAR_FOOT_BRAKE", desc: "Optional rear foot-brake", icon: "[🦶]" },
+    { title: "3-IN-1 LIGHT", desc: "Headlight + DRL + amber in one sealed unit. Fewer parts, fewer claims", icon: "[💡]" },
+    { title: "DUAL BATTERY", desc: "Swap in under 60 seconds. Double range between charges", icon: "[🔋]" },
+    { title: "BATTERY LOCK", desc: "Tamper-proof locking with at-a-glance charge status", icon: "[🔒]" },
+    { title: "ALUMINUM PLATE", desc: "CNC skid plate protects motor and frame on trail variants", icon: "[🛡️]" },
+    { title: "EXT_CHG_PORT", desc: "Any standard outlet. No battery removal needed", icon: "[⚡]" },
+    { title: "CHAIN DRIVE", desc: "Mid-mount motor with standard chain drive. Any shop can service it", icon: "[⚙️]" },
+    { title: "KKE SUSPENSION", desc: "240mm travel front and rear. Fully adjustable", icon: "[🔧]" },
+    { title: "REAR_FOOT_BRAKE", desc: "Optional foot brake. Riders choose their setup", icon: "[🦶]" },
   ];
 
   return (
@@ -444,8 +444,8 @@ function FeaturesSection() {
             // SPECIFICATIONS
           </div>
           <h2 className="font-mono text-4xl md:text-5xl font-bold mb-4">
-            <span className="text-white">KEY </span>
-            <span className="text-[#E31937]">FEATURES</span>
+            <span className="text-white">BUILT_TO </span>
+            <span className="text-[#E31937]">SELL</span>
           </h2>
         </motion.div>
 
@@ -470,10 +470,10 @@ function FeaturesSection() {
 // Why Partner Section
 function WhyPartnerSection() {
   const benefits = [
-    { title: "EV_MARKET", desc: "40%+ annual growth in electric powersports", stat: "+40%", label: "YoY_GROWTH" },
-    { title: "PREMIUM", desc: "Quality and innovation brand positioning", stat: "PRM", label: "BRAND_TIER" },
-    { title: "SUPPORT", desc: "Marketing, training, dedicated B2B", stat: "FULL", label: "DEALER_SUPPORT" },
-    { title: "MARGINS", desc: "Competitive pricing, strong margins", stat: "HIGH", label: "PROFIT" },
+    { title: "MARKET_TIMING", desc: "Electric powersports growing 40%+ YoY. Early dealers own their region", stat: "+40%", label: "YoY_GROWTH" },
+    { title: "ZERO_FLUIDS", desc: "Service stays busy with upgrades and accessories, not oil changes", stat: "0", label: "GAS_OIL" },
+    { title: "TURNKEY_PROGRAM", desc: "POP displays, digital assets, product training, B2B portal", stat: "DONE", label: "FOR_YOU" },
+    { title: "SIX_CONFIGS", desc: "Three variants, two body styles. Fewer SKUs, more customers", stat: "6", label: "PER_MODEL" },
   ];
 
   return (
@@ -508,16 +508,16 @@ function WhyPartnerSection() {
           variants={fadeInUp}
           className="mt-16 text-center p-8 border border-[#E31937]/50"
         >
-          <h3 className="font-mono text-xl font-bold text-white mb-4">// READY_TO_DEPLOY?</h3>
+          <h3 className="font-mono text-xl font-bold text-white mb-4">// 2026_TERRITORIES_FILLING</h3>
           <p className="font-mono text-gray-400 mb-6">
-            &gt; Limited dealer spots for 2026. Secure your territory.
+            &gt; Limited dealers per region. Once your area is claimed, it is closed.
           </p>
           <a
             href="#dealer-form"
             className="inline-block px-8 py-4 bg-[#E31937] font-mono font-bold text-black hover:bg-[#ff3366] transition-colors"
             style={{ boxShadow: '0 0 20px rgba(227, 25, 55, 0.5)' }}
           >
-            [ INITIATE_REQUEST ]
+            [ RESERVE_TERRITORY ]
           </a>
         </motion.div>
       </div>
@@ -556,11 +556,11 @@ function DealerForm() {
             // DEALER_WAITLIST
           </div>
           <h2 className="font-mono text-4xl md:text-5xl font-bold mb-4">
-            <span className="text-white">DEALER </span>
-            <span className="text-[#E31937]">ACCESS</span>
+            <span className="text-white">LOCK_IN </span>
+            <span className="text-[#E31937]">REGION</span>
           </h2>
           <p className="font-mono text-gray-400 text-lg max-w-2xl mx-auto">
-            &gt; Submit your credentials for dealer authorization.
+            &gt; Submit details to reserve dealer rights. Response within 2-3 business days.
           </p>
         </motion.div>
 
@@ -677,7 +677,7 @@ function DealerForm() {
               className="w-full py-4 bg-[#E31937] font-mono font-bold text-black text-lg hover:bg-[#ff3366] transition-colors"
               style={{ boxShadow: '0 0 30px rgba(227, 25, 55, 0.3)' }}
             >
-              [ SUBMIT_TRANSMISSION ]
+              [ SECURE_DEALER_SPOT ]
             </button>
 
             <p className="text-center font-mono text-gray-600 text-xs">

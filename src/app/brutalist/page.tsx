@@ -109,7 +109,7 @@ function HeroSection() {
             href="#dealer-form"
             className="px-10 py-6 bg-[#E31937] text-black font-black text-xl uppercase tracking-wider hover:bg-white transition-colors border-4 border-[#E31937]"
           >
-            BECOME A DEALER
+            CLAIM YOUR TERRITORY
           </a>
           <a
             href="#products"
@@ -139,7 +139,7 @@ function ProductsSection() {
     {
       name: "8850",
       fullName: "HOOGA 8850",
-      tagline: "FLAGGHSHIP PERFORMANCE",
+      tagline: "25KW OF PURE DUAL-SPORT POWER",
       specs: [
         { label: "TOP SPEED", value: "115 km/h" },
         { label: "RANGE", value: "140 km" },
@@ -154,7 +154,7 @@ function ProductsSection() {
     {
       name: "7270",
       fullName: "HOOGA 7270",
-      tagline: "LONG RANGE CHAMPION",
+      tagline: "180KM RANGE — RIDE ALL DAY, CHARGE OVERNIGHT",
       specs: [
         { label: "TOP SPEED", value: "100 km/h" },
         { label: "RANGE", value: "180 km" },
@@ -177,7 +177,7 @@ function ProductsSection() {
             LINEUP
           </h2>
           <p className="text-xl font-bold mt-4 max-w-xl">
-            TWO MODELS. ONE MISSION. ZERO COMPROMISES.
+            THE 8850 FOR RAW POWER. THE 7270 FOR ALL-DAY RANGE.
           </p>
         </motion.div>
 
@@ -257,20 +257,20 @@ function VariantsSection() {
     {
       name: "STREET",
       wheel: "19/18",
-      description: "URBAN-READY WITH STREET TIRES",
-      features: ["STREET TIRES", "URBAN SUSPENSION", "DOT BRAKES"],
+      description: "19/18 DOT-APPROVED TIRES FOR DAILY RIDERS",
+      features: ["DUAL-PURPOSE TIRES", "USD GOLD FORKS", "DOT HYDRAULIC BRAKES"],
     },
     {
       name: "TRAIL",
       wheel: "21/18",
-      description: "KNOBBY TIRES FOR OFF-ROAD",
-      features: ["KNOBBY TIRES", "KKE 240MM", "REINF FRAME"],
+      description: "21/18 KNOBBY TIRES FOR TRAILS AND FIRE ROADS",
+      features: ["KNOBBY OFF-ROAD TIRES", "KKE 240MM TRAVEL", "ALUMINUM BASH PLATE"],
     },
     {
       name: "SUPERMOTO",
       wheel: "17/17",
-      description: "TRACK-FOCUSED AGGRESSION",
-      features: ["SLICK TIRES", "SPORT SUSPENSION", "QUICK REL"],
+      description: "17/17 STICKY WHEELS FOR FLAT TRACK AND SUPERMOTO",
+      features: ["DUAL-PURPOSE TIRES", "SPORT SUSPENSION", "QUICK-RELEASE WHEELS"],
     },
   ];
 
@@ -313,11 +313,11 @@ function VariantsSection() {
           <div className="grid md:grid-cols-2 gap-0 border-8 border-white">
             <div className="p-8 bg-white text-black border-r-8 border-black">
               <h4 className="text-3xl font-black mb-2">SEMI-SHROUD</h4>
-              <p className="font-bold">MINIMAL COVERAGE, MAX PERFORMANCE</p>
+              <p className="font-bold">OPEN FRAME. LIGHTER WEIGHT. EASIER SERVICE ACCESS</p>
             </div>
             <div className="p-8 bg-[#E31937] text-black">
               <h4 className="text-3xl font-black mb-2">FULL-FAIRING</h4>
-              <p className="font-bold">COMPLETE WIND PROTECTION</p>
+              <p className="font-bold">FULL WIND PROTECTION FOR HIGHWAY SPEEDS</p>
             </div>
           </div>
         </motion.div>
@@ -329,14 +329,14 @@ function VariantsSection() {
 // Features Section
 function FeaturesSection() {
   const features = [
-    { title: "3-IN-1 LIGHT", desc: "HEADLIGHT + DRL + AMBER" },
-    { title: "DUAL BATTERY", desc: "QUICK-REMOVE STRAPS" },
-    { title: "BATTERY LOCK", desc: "SECURE + CHARGE INDICATOR" },
-    { title: "ALUMINUM PLATE", desc: "HIGH-STRENGTH PROTECTION" },
-    { title: "EXT CHG PORT", desc: "CHARGE WITHOUT REMOVING" },
-    { title: "CHAIN DRIVE", desc: "ELECTRIC MID-MOUNT" },
-    { title: "KKE SUSPENSION", desc: "240MM TRAVEL" },
-    { title: "REAR FOOT BRAKE", desc: "OPTIONAL CUSTOM STYLE" },
+    { title: "3-IN-1 LIGHT", desc: "HEADLIGHT + DRL + AMBER IN ONE SEALED UNIT. FEWER PARTS, FEWER CLAIMS" },
+    { title: "DUAL BATTERY", desc: "SWAP IN UNDER 60 SECONDS. DOUBLE YOUR RANGE BETWEEN CHARGES" },
+    { title: "BATTERY LOCK", desc: "TAMPER-PROOF LOCKING WITH AT-A-GLANCE CHARGE STATUS" },
+    { title: "ALUMINUM PLATE", desc: "CNC SKID PLATE PROTECTS MOTOR AND FRAME ON TRAIL VARIANTS" },
+    { title: "EXT CHG PORT", desc: "ANY STANDARD OUTLET. NO BATTERY REMOVAL. NO SPECIAL EQUIPMENT" },
+    { title: "CHAIN DRIVE", desc: "MID-MOUNT MOTOR WITH STANDARD CHAIN DRIVE. ANY SHOP CAN SERVICE IT" },
+    { title: "KKE SUSPENSION", desc: "240MM TRAVEL FRONT AND REAR. FULLY ADJUSTABLE FOR WEIGHT AND TERRAIN" },
+    { title: "REAR FOOT BRAKE", desc: "OPTIONAL FOOT BRAKE. RIDERS CHOOSE THEIR PREFERRED SETUP" },
   ];
 
   return (
@@ -345,7 +345,7 @@ function FeaturesSection() {
         <motion.div variants={fadeInUp} className="mb-16 px-6">
           <div className="w-24 h-2 bg-black" />
           <h2 className="text-7xl md:text-9xl font-black mt-4 tracking-tighter">
-            FEATURES
+            BUILT TO SELL
           </h2>
         </motion.div>
 
@@ -370,10 +370,10 @@ function FeaturesSection() {
 // Why Partner Section
 function WhyPartnerSection() {
   const benefits = [
-    { title: "EV MARKET", desc: "40%+ ANNUAL GROWTH", stat: "+40%", label: "GROWTH" },
-    { title: "PREMIUM", desc: "QUALITY + INNOVATION", stat: "PRM", label: "BRAND" },
-    { title: "SUPPORT", desc: "MARKETING + TRAINING", stat: "FULL", label: "SUPPORT" },
-    { title: "MARGINS", desc: "COMPETITIVE PRICING", stat: "HIGH", label: "PROFIT" },
+    { title: "MARKET TIMING", desc: "ELECTRIC POWERSPORTS GROWING 40%+ YOY. EARLY DEALERS OWN THEIR REGION", stat: "+40%", label: "GROWTH" },
+    { title: "NO GAS NO OIL", desc: "SERVICE STAYS BUSY WITH UPGRADES AND ACCESSORIES, NOT OIL CHANGES", stat: "ZERO", label: "FLUIDS" },
+    { title: "TURNKEY PROGRAM", desc: "POP DISPLAYS, DIGITAL ASSETS, PRODUCT TRAINING, B2B PORTAL", stat: "DONE", label: "FOR YOU" },
+    { title: "SIX CONFIGS", desc: "THREE VARIANTS, TWO BODY STYLES. FEWER SKUS, MORE CUSTOMERS", stat: "6", label: "PER MODEL" },
   ];
 
   return (
@@ -405,15 +405,15 @@ function WhyPartnerSection() {
           variants={fadeInUp}
           className="mt-16 p-12 bg-[#E31937] border-8 border-white"
         >
-          <h3 className="text-5xl md:text-7xl font-black mb-4">READY?</h3>
+          <h3 className="text-5xl md:text-7xl font-black mb-4">2026 TERRITORIES ARE FILLING UP</h3>
           <p className="font-bold text-xl mb-8 max-w-xl">
-            LIMITED DEALER SPOTS FOR 2026. SECURE YOUR TERRITORY TODAY.
+            LIMITED DEALERS PER REGION. ONCE YOUR AREA IS CLAIMED, IT IS CLOSED.
           </p>
           <a
             href="#dealer-form"
             className="inline-block px-12 py-6 bg-black text-[#E31937] font-black text-xl uppercase tracking-wider hover:bg-white transition-colors"
           >
-            APPLY NOW →
+            RESERVE YOUR TERRITORY →
           </a>
         </motion.div>
       </div>
@@ -450,10 +450,10 @@ function DealerForm() {
         <motion.div variants={fadeInUp} className="mb-16">
           <div className="w-24 h-2 bg-[#E31937]" />
           <h2 className="text-7xl md:text-9xl font-black mt-4 tracking-tighter">
-            DEALER
+            LOCK IN YOUR REGION
           </h2>
           <p className="text-xl font-bold mt-4">
-            JOIN THE WAITLIST. GET IN TOUCH.
+            SUBMIT YOUR DETAILS. OUR TEAM RESPONDS WITHIN 2-3 BUSINESS DAYS.
           </p>
         </motion.div>
 
@@ -569,7 +569,7 @@ function DealerForm() {
               type="submit"
               className="w-full py-8 bg-[#E31937] text-black font-black text-2xl uppercase tracking-wider hover:bg-black hover:text-[#E31937] transition-colors"
             >
-              SUBMIT →
+              SECURE MY DEALER SPOT →
             </button>
           </motion.form>
         )}
